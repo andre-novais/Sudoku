@@ -36,7 +36,7 @@ class RoubaSudoku():
         if type(self.tabela[row][indcolumn]) == int and self.tabela[row][indcolumn] in self.tabela[indrow][column]:
           self.tabela[indrow][column].remove(self.tabela[row][indcolumn])
     if len(self.tabela[indrow][column])== 1:
-      print(f'{indrow+1} row and {column+1} column is {self.tabela[indrow][column]}')
+      print(f'{indrow+1} row and {column+1} column is {self.tabela[indrow][column][0]}')
       self.tabela[indrow][column] = self.tabela[indrow][column][0]
     #print(f'{indrow} : {column} can be {self.tabela[indrow][column]}')  
     return
