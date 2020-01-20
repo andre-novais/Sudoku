@@ -153,7 +153,9 @@ if __name__ == '__main__':
                  ['.','.','.',5,4,9,'.','.','.'],
                  ['.','.','.','.','.','.',7,'.',2],
                  [5,'.','.','.','.','.','.',8,'.']]
-joguinho = RoubaSudoku(tabela_hard)
-joguinho.soluciona()               
+                  
+if __name__ == '__main__':
+  joguinho = RoubaSudoku(tabela_hard)
+  joguinho.soluciona()               
                
   
